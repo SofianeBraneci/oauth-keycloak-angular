@@ -12,7 +12,7 @@ function initializeKeycloak(keycloak: KeycloakService){
   return () =>
     keycloak.init({
       config: {
-        url: 'http://localhost:8080',
+        url: 'http://sso.keycloak.local:8080',
         realm: 'org',
         clientId: 'angular-client-id'
       },
